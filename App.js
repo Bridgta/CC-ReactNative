@@ -1,30 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
+import { View} from 'react-native';
+import WelcomeScreen from './app/screens/WelcomeScreen';
 
 // View -> UIView
 export default function App() {
 
-  const handledPress = () => console.log("Text Pressed")
+
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text onPress={handledPress}>Closet Clear</Text>
-      <Image source={{
-        width: 200,
-        height: 300,
-        uri: "https://picsum.photos/200/300"}}/>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    <WelcomeScreen/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    justifyContent: "center",
-    alignItems: "center"
-  },
-});
+
+
 
