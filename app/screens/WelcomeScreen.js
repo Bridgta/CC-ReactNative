@@ -8,8 +8,12 @@ function WelcomeScreen(props) {
                 <Image style={styles.logo} source={require('../assets/logo-red.png')}/>
                 <Text>Sell What You Don't Need</Text>
             </View>
-            <View style={styles.loginButton}></View>
-            <View style={styles.regButton}></View>
+            <View style={styles.loginButton}>
+                <Text>Login</Text>
+            </View>
+            <View style={styles.regButton}>
+                <Text>Sign Up</Text>
+            </View>
         </ImageBackground>
     );
 }
